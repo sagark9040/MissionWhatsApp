@@ -1,0 +1,30 @@
+<!-- Spring Error in the head of the POM file, unable to compile POM file - unable to find solution FIXED -->
+       <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-framework-bom</artifactId>
+            <version>4.2.5.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        
+<!-- Exception in thread "main" java.lang.UnsupportedClassVersionError: org/openqa/selenium/Capabilities : Unsupported major.minor version 52.0 --> 
+Changed to Java 8 in compiler and in Build Path. In the latter, added JDK 8.
+       
+ 
+<!-- Exception in thread "main" org.openqa.selenium.WebDriverException: Unable to parse remote response: <!DOCTYPE html> -->
+
+
+<!-- Exception in thread "main" java.lang.IllegalStateException: The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html -->
+Used the wrong driver for chrome.
+
+Download and then use this:
+      System.setProperty("webdriver.chrome.driver", "/Users/skangutk/Downloads/chromedriver");
+
+
+<!-- -->
+
+
+<!-- -->
+
+
+        
